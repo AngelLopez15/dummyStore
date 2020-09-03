@@ -1,0 +1,14 @@
+<%- include('templates/header', {tituloWeb:'Producto'}); %>
+
+<div class="ed-grid s-grid-2">
+  <img src="./assets/huawei.jpg" alt="celular">
+  
+  <form method="POST">
+    <script
+      src="https://www.mercadopago.com.mx/integrations/v1/web-payment-checkout.js"
+      data-preference-id='<%= global.id %>'>
+    </script>
+  </form>
+</div>
+
+<%- include('templates/footer'); %>

@@ -1,17 +1,23 @@
-var express = require('express');
+const express = require('express');
 
-var app = express();
+const app = express();
 
-app.get('/', function (req, res) {
-    res.render('home');
+const port = 3000;
+
+app.set('view engine', 'ejs');
+
+app.set('views', __dirname+'/views');
+
+app.use(express.static(__dirname+'/public'));
+
+app.get('/', (req, res) =>{
+    res.render('index');
+})
+
+app.get('/producto', (req, res) =>{
+    res.render('producto');
+})
+
+app.listen(port,()=>{
+    console.log(`Servidor online en el puerto ${port}`)
 });
-
-app.get('/detail', function (req, res) {
-    res.render('detail', req.query);
-});
-
-app.use(express.static('assets'));
-
-app.use('/assets', express.static(__dirname + '/assets'));
-
-app.listen(3000);

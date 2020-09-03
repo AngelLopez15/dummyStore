@@ -1,0 +1,23 @@
+{
+  "name": "mp-ecommerce-nodejs-master",
+  "version": "1.0.0",
+  "description": "dummy-ecomerce",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngelLopez15/dummyStore.git"
+  },
+  "author": "angel-lopez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngelLopez15/dummyStore/issues"
+  },
+  "homepage": "https://github.com/AngelLopez15/dummyStore#readme",
+  "dependencies": {
+    "ejs": "^3.1.5",
+    "express": "^4.17.1"
+  }
+}
